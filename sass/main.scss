@@ -1,0 +1,35 @@
+// $primary : #024873; // primary
+// $secondary : #0396A6; //secondary
+// $info: #F25E5E; //info
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.menu-top-menu-container, .custom-logo-link{
+    display: inline-block;
+}
+
+.top-bar {
+    text-align: center;
+    margin: 0;
+
+
+}
+
+.top-bar li {
+    display: inline;
+}
+
+
+.top-bar a {
+    padding: 1rem 1rem;
+    color : black;
+    
+}
+
+.top-bar a:hover {
+    color: #70BF44; 
+    text-decoration: none;
+}
+
