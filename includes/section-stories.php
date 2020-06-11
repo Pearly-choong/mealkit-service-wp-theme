@@ -1,70 +1,46 @@
-<div class="bg-light">
 <?php
-if (have_posts()) :
-  while (have_posts()):
-    the_post();
-    ?>
-  <p class="display-4 mt-3"> <?php the_title(); ?> </p>
+if (have_posts()) : ?>
+ 
+  <!-- <div class="row"> -->
+    <!-- <div class="col-sm-9 col-md-9 col-lg-12 col-xl-9 mb-3"> -->
+      
+      <div class="row pl-3">
+        <?php while (have_posts()):
+          the_post();
+        ?>
+          <div class="blog-info col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="card my-3 border mr-5 shadow d-flex justify-content-center" style="width: 28rem;">        
+                <?php if(has_post_thumbnail()): ?>
+                    <div>
+                      <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="card-img-top img-thumbnail">
+                    </div>
+                <?php endif; ?>
+              <div class="card-body mb-2">
+                <h5 class="card-title font-weight-bold"> <?php the_title(); ?></h5>
+                  <?php
+                  the_excerpt();//cut of some portion of text
+                  ?>
+                  <u><a href="<?php the_permalink(); ?>" class="theme-color-2 mb-4 px-3 py-2 rounded text-underline"> Read More </a></u>
+              </div>
+            </div>
+          </div>
+          
+        <?php endwhile; ?>
 
-<a href="<?php the_permalink(); ?>" class="text-dark">
-<!-- featured image -->
-<?php if(has_post_thumbnail()): ?>
-    <!-- This has a featured image -->
-    <div>
-      <img src="<?php the_post_thumbnail_url('blog-small'); ?>" alt="<?php the_title(); ?>" class="mb-3 img-fluid img-thumbnail">
-    </div>
-<?php endif; ?>
-
-</a>
-
-<p class="text-dark">
-<?php  echo get_the_date('h:i:s d/m/Y'); //check php date format ?>
-</p>
-
-<p class="h6 mt-0">
-<?php
-
-    the_content();
-    // the_author();
-?>
-
-</p>
-<?php
-  // $fname = get_the_author_meta('first_name');
-  // $lname = get_the_author_meta('last_name');
-  ?>
-  <!-- <p class="text-dark"> <?php //echo 'Posted by ' . $fname . ' ' . $lname; ?> </p> -->
-
-  <?php
-    $tags = get_the_tags();
-    if($tags):
-    foreach($tags as $tag):?>
-      <a class="text-dark" href="<?php echo get_tag_link($tag -> term_id);  ?>">
-        <?php echo $tag -> name; ?>
-      </a>
-
-<?php endforeach;
-else:
-endif; ?>
+      </div>
+    <!-- </div>  -->
+    <!-- col ends here -->
+    
+    <!-- <div class="col-sm-3 col-md-3 col-lg-12 col-xl-3 widget">
+        <?php// if(is_active_sidebar('blog-sidebar')) :?>
+          <?php //dynamic_sidebar('blog-sidebar'); ?>
+        <?php //endif; ?>
+      </div>  -->
+      <!-- col ends here -->
+  <!-- </div>   -->
+  <!-- row ends here -->
 
 <?php
-  $categories = get_the_category();
-  foreach($categories as $cat):?>
-
-  <a class="text-dark" href="<?php echo get_category_link($cat->term_id); ?>">
-    <?php echo $cat->name; //go and add single_cat_title() in archive ?>
-  </a>
-<?php endforeach; ?>
-
-
-<?php// comments_template();?>
-<!-- /to get multiple parts of a page add this in single.php -->
-
-<?php
-
-  endwhile;
  else:
 endif;
-
 ?>
-</div>

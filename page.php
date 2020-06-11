@@ -1,6 +1,6 @@
   
 <?php get_header(); ?>
-
+<hr>
 <section class="page-wrap mt-5">
     <h1 class="title text-center mt-5"> <?php the_title(); ?></h1>
     <div class="container">

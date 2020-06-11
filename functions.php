@@ -105,57 +105,6 @@ function mealKit_custom_logo_setup() {
 add_action( 'after_setup_theme', 'mealKit_custom_logo_setup' );
 
 
-// button
-
-// function custom_button_shortcode( $atts, $content = null ) {
-   
-//   // shortcode attributes
-//   extract( shortcode_atts( array(
-//       'url'    => '',
-//       'title'  => '',
-//       'target' => '',
-//       'text'   => '',
-//   ), $atts ) );
-
-//   $content = $text ? $text : $content;
-
-//   // Returns the button with a link
-//   if ( $url ) {
-
-//       $link_attr = array(
-//           'href'   => esc_url( $url ),
-//           'title'  => esc_attr( $title ),
-//           'target' => ( 'blank' == $target ) ? '_blank' : '',
-//           'class'  => 'custombutton'
-//       );
-
-//       $link_attrs_str = '';
-
-//       foreach ( $link_attr as $key => $val ) {
-
-//           if ( $val ) {
-
-//               $link_attrs_str .= ' ' . $key . '="' . $val . '"';
-
-//           }
-
-//       }
-
-
-//       return '<a' . $link_attrs_str . '><span>' . do_shortcode( $content ) . '</span></a>';
-
-//   }
-
-//   // Return as span when no link defined
-//   else {
-
-//       return '<span class="custombutton"><span>' . do_shortcode( $content ) . '</span></span>';
-
-//   }
-
-// }
-// add_shortcode( 'custombutton', 'custom_button_shortcode' );
-
 
 
 // custom post type

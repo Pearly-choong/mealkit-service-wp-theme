@@ -4,7 +4,7 @@
 <section class="page-wrap ,t-5">
 <div class="container mt-5">
       <!-- This is the category blog template -->
-      <?php get_template_part('includes/section','archive'); ?>
+      <?php get_template_part('includes/section','stories'); ?>
       <!-- Pagination Method 1 -->
    <?php //previous_posts_link();  ?>
    <?php //next_posts_link();  ?>
