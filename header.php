@@ -17,8 +17,7 @@
         <h1 class="display-4 text-light siteTitle"> <?php //echo get_theme_mod('art_siteTitleText'); ?></h1>
   </div> -->
     <header>
-     
-                
+              
 
      <!-- bootstrap nav-walker -->
 

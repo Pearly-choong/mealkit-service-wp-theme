@@ -9918,6 +9918,14 @@ h1 {
   font-family: 'Acme', sans-serif;
 }
 
+.theme-color {
+  color: #70BF44;
+}
+
+.theme-color-2 {
+  color: #C2004E;
+}
+
 /*Top Menu*/
 .menu-top-menu-container, .custom-logo-link {
   display: inline-block;
@@ -9949,6 +9957,13 @@ h1 {
   align-items: center;
 }
 
+.site-title {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 50%;
+}
+
 .widget {
   list-style-type: none;
   margin: 0;
@@ -9972,6 +9987,18 @@ h1 {
 .widget_categories ul li a:hover {
   color: #70BF44;
   text-decoration: underline;
+}
+
+figcaption {
+  width: 300px;
+}
+
+.wp-block-image {
+  text-align: center;
+}
+
+.card-body a:hover {
+  color: #70BF44;
 }
 
 footer {

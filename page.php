@@ -1,9 +1,8 @@
   
 <?php get_header(); ?>
 
-<section class="page-wrap mt-4">
-    <h1 class="title text-center"> <?php the_title(); ?></h1>
-   
+<section class="page-wrap mt-5">
+    <h1 class="title text-center mt-5"> <?php the_title(); ?></h1>
     <div class="container">
       
         <?php if(has_post_thumbnail()): ?>

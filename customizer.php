@@ -34,6 +34,39 @@ function mytheme_customize_register( $wp_customize ) {
     ) ) );
 
 
+    // Site Title Text
+  //  $wp_customize->add_section( 'mealKit_siteTitleTextSection' , array(
+  //      'title'      => __( 'Site Title Text', 'mealKitTheme' ),
+  //      'priority'   => 30,
+  //  ));
+
+    $wp_customize->add_setting( 'mealKit_siteTitleText' , array(
+      'default'   => 'Meal Kit Delivery',
+      'transport' => 'refresh',
+     ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'mealKit_siteTitleTextControl', array(
+      'label'      => __( 'Site Title Text', 'mealKitTheme' ),
+      'section'    => 'mealKit_siteTitleTextSection',
+      'settings'   => 'mealKit_siteTitleText',
+    ) ) );
+
+
+  // header image
+    $wp_customize->add_setting( 'mealKit_frontPageImageSetting' , array(
+      'default'   => '',
+      'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'mealKit_frontPageImageControl', array(
+      'label'      => __( 'Front Page Header Image', 'mealKitTheme' ),
+      'section'    => 'mealKit_frontPageImage',
+      'settings'   => 'mealKit_frontPageImageSetting',
+    ) ) );
+
+
+
+
    // Footer Message
    $wp_customize->add_section( 'mealKit_footerSection' , array(
        'title'      => __( 'Footer Text', 'mealKitTheme' ),
@@ -41,7 +74,7 @@ function mytheme_customize_register( $wp_customize ) {
    ));
 
    $wp_customize->add_setting( 'mealKit_footerMessage' , array(
-       'default'   => '@2020M-Kit. All rights reserved.',
+       'default'   => '@2020 M-Kit. All rights reserved.',
        'transport' => 'refresh',
    ) );
 
@@ -51,37 +84,7 @@ function mytheme_customize_register( $wp_customize ) {
      'settings'   => 'mealKit_footerMessage',
    ) ) );
 
-   // Site Title Text
-   $wp_customize->add_section( 'mealKit_siteTitleTextSection' , array(
-       'title'      => __( 'Site Title Text', 'mealKitTheme' ),
-       'priority'   => 30,
-   ));
-
-   $wp_customize->add_setting( 'mealKit_siteTitleText' , array(
-       'default'   => 'Meal Kit Delivery',
-       'transport' => 'refresh',
-   ) );
-
-   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'mealKit_siteTitleTextControl', array(
-     'label'      => __( 'Site Title Text', 'mealKitTheme' ),
-     'section'    => 'mealKit_siteTitleTextSection',
-     'settings'   => 'mealKit_siteTitleText',
-   ) ) );
-
-
-   // header image
-   $wp_customize->add_setting( 'mealKit_frontPageImageSetting' , array(
-    'default'   => '',
-    'transport' => 'refresh',
-  ) );
  
-  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'mealKit_frontPageImageControl', array(
-    'label'      => __( 'Front Page Header Image', 'mealKitTheme' ),
-    'section'    => 'mealKit_frontPageImage',
-    'settings'   => 'mealKit_frontPageImageSetting',
-  ) ) );
-
-
 
    // footer icon image
   $wp_customize->add_section( 'mealKit_footerIconImage' , array(

@@ -15,11 +15,11 @@ if (have_posts()) : ?>
                     </div>
                 <?php endif; ?>
               <div class="card-body mb-2">
-                <h5 class="theme-color card-title"> <?php the_title(); ?></h5>
+                <h5 class="card-title font-weight-bold"> <?php the_title(); ?></h5>
                   <?php
                   the_excerpt();//cut of some portion of text
                   ?>
-                  <a href="<?php the_permalink(); ?>" class="theme-color-2 my-border mb-4 px-3 py-2 rounded"> View Recipes </a>
+                  <u><a href="<?php the_permalink(); ?>" class="theme-color-2 mb-4 px-3 py-2 rounded text-underline"> View Recipes </a></u>
               </div>
             </div>
           </div>

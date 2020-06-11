@@ -10,7 +10,7 @@
         </div>
   <?php endif; ?>
 
-      <h1 class="title theme-color"> <?php the_title(); ?></h1>
+      <h2 class="title mt-5 font-weight-bold"> <?php the_title(); ?></h2>
       <?php get_template_part('includes/section','blogcontent'); ?>
          <?php wp_link_pages(); ?>
 </div>

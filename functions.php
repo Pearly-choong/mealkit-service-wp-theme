@@ -90,7 +90,7 @@ add_action('widgets_init', 'my_sidebars');
 
 
 // custom logo
-function themename_custom_logo_setup() {
+function mealKit_custom_logo_setup() {
     $defaults = array(
     'height'      => 50,
     'width'       => 50,
@@ -99,10 +99,63 @@ function themename_custom_logo_setup() {
     'header-text' => array( 'site-title', 'site-description' ),
     );
     add_theme_support( 'custom-logo', $defaults );
-    add_theme_support('site-title', $defaults);
+    // add_theme_support( 'title-tag' );
    }
    
-add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+add_action( 'after_setup_theme', 'mealKit_custom_logo_setup' );
+
+
+// button
+
+// function custom_button_shortcode( $atts, $content = null ) {
+   
+//   // shortcode attributes
+//   extract( shortcode_atts( array(
+//       'url'    => '',
+//       'title'  => '',
+//       'target' => '',
+//       'text'   => '',
+//   ), $atts ) );
+
+//   $content = $text ? $text : $content;
+
+//   // Returns the button with a link
+//   if ( $url ) {
+
+//       $link_attr = array(
+//           'href'   => esc_url( $url ),
+//           'title'  => esc_attr( $title ),
+//           'target' => ( 'blank' == $target ) ? '_blank' : '',
+//           'class'  => 'custombutton'
+//       );
+
+//       $link_attrs_str = '';
+
+//       foreach ( $link_attr as $key => $val ) {
+
+//           if ( $val ) {
+
+//               $link_attrs_str .= ' ' . $key . '="' . $val . '"';
+
+//           }
+
+//       }
+
+
+//       return '<a' . $link_attrs_str . '><span>' . do_shortcode( $content ) . '</span></a>';
+
+//   }
+
+//   // Return as span when no link defined
+//   else {
+
+//       return '<span class="custombutton"><span>' . do_shortcode( $content ) . '</span></span>';
+
+//   }
+
+// }
+// add_shortcode( 'custombutton', 'custom_button_shortcode' );
+
 
 
 // custom post type
@@ -112,16 +165,18 @@ function my_first_post_type(){
         'name' => 'Stories',
         'singular_name' => 'Stories',
     ),
-  'hierarchical' => true, //booleans value toggles between pages & posts without labels
-  'menu_icon' => 'dashicons-carrot',
+
+  'hierarchical' => true, //boolean value toggles between pages & posts without labels
+  'menu_icon' => 'dashicons-carrot',//get icon name from wordpress dashicons
   'public' => true,
   'has_archive' => true,
-  'supports' => array('title', 'editor', 'thumbnail','custom-fields'),// if one of the argument is  not mentioned,
+  'supports' => array('title','editor','thumbnail','custom-fields' ),// if one of the argument is  not mentioned,
   //if makes difference in features
 
 );
   register_post_type('stories',$args);
 }
+
 add_action('init','my_first_post_type');
 
 

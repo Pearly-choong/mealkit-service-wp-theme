@@ -1,8 +1,8 @@
 
 <?php get_header(); ?>
 
-<section class="page-wrap">
-<div class="container">
+<section class="page-wrap ,t-5">
+<div class="container mt-5">
       <!-- This is the category blog template -->
       <?php get_template_part('includes/section','archive'); ?>
       <!-- Pagination Method 1 -->

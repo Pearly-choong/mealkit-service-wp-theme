@@ -16,6 +16,13 @@ h1 {
     font-family: 'Acme', sans-serif;
 }
 
+.theme-color {
+    color: #70BF44;  
+}
+
+.theme-color-2 {  
+    color: #C2004E;
+}
 
 /*Top Menu*/
 
@@ -38,6 +45,9 @@ h1 {
 .navbar-light .navbar-nav .nav-link:hover{
     color: #70BF44;
   }
+
+
+
 
 // .top-bar{
 // 	position: sticky;
@@ -73,6 +83,13 @@ h1 {
     align-items: center;
 }
 
+.site-title{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+}
+
 
 .widget {
     list-style-type: none;
@@ -98,6 +115,42 @@ h1 {
     color: #70BF44;
     text-decoration: underline;
 }
+
+
+
+figcaption {
+    width: 300px;
+}
+
+
+.wp-block-image{
+    text-align: center;
+}
+
+
+.card-body a:hover {
+    color: #70BF44;
+}
+
+
+// .card-body a{
+//     background-color: #70BF44;
+//     color: white;
+//     font-family: 'Montserrat', sans-serif;
+// }
+
+
+// .my-border {
+//     border : 1px solid #70BF44;
+// }
+
+// .card-body a:hover {
+//     color: #70BF44;
+//     background-color: white;
+//     border : 2px solid #70BF44;
+// }
+
+
 
 
 footer{

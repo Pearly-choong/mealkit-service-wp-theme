@@ -5,11 +5,16 @@
       the_post();
   ?>
 
+  <?php
+    the_content();
+    // the_author();
+  ?>
+
   <hr>
   <div class="row">
     <div class="col-lg-4">  
-      <p class="theme-color-2">Date: 
-      <?php  echo get_the_date('l, h:i:s d/m/Y'); //check php date format ?>
+      <p>Date: 
+      <?php  echo get_the_date('l, d/m/Y'); //check php date format ?>
       </p>
     </div>
     <div class="col-lg-4">
@@ -17,19 +22,19 @@
         $fname = get_the_author_meta('first_name');
         $lname = get_the_author_meta('last_name');
       ?>
-      <p class="theme-color-2"> <?php echo 'Posted by: ' . $fname . ' ' . $lname; ?> </p>
+      <p> <?php echo 'Posted by: ' . $fname . ' ' . $lname; ?> </p>
     </div>
     <div class="col-lg-4">
       <?php
       $categories = get_the_category();
       ?>
-        <p class="text-danger">Category :
+        <p>Category :
           <?php
           foreach($categories as $cat):?>
 
-          <a class="" href="<?php echo get_category_link($cat->term_id); ?>">
+          <u><a class="theme-color-2" href="<?php echo get_category_link($cat->term_id); ?>">
             <?php echo $cat->name; //go and add single_cat_title() in archive ?>
-          </a>
+          </a></u>
           <?php endforeach; ?>
         </p>
     </div>
@@ -39,22 +44,19 @@
       <?php
         $tags = get_the_tags();
       ?>
-      <p class="text-danger">Tag : 
+      <p>Tag : 
         <?php
           foreach($tags as $tag):?>
-            <a class="ml-3" href="<?php echo get_tag_link($tag -> term_id);  ?>">
+            <u><a class="ml-3 theme-color-2" href="<?php echo get_tag_link($tag -> term_id);  ?>">
               <?php echo $tag -> name; ?>
-            </a>
+            </a></u>
         <?php endforeach; ?>
       </p>
     </div>
   </div> <!-- row ends here -->
-  <hr>
+ 
 
-  <?php
-    the_content();
-    // the_author();
-  ?>
+
 
   
 
