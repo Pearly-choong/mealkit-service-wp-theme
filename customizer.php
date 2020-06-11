@@ -6,87 +6,99 @@ function mytheme_customize_register( $wp_customize ) {
 
 
    // Background Colour
-   $wp_customize->add_setting( 'art_backgroundColour' , array(
+   $wp_customize->add_setting( 'mealKit_backgroundColour' , array(
        'default'   => '#ffffff',
        'transport' => 'refresh',
    ) );
 
 
-   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'art_backgroundColourControl', array(
-   	'label'      => __( 'Background Colour', 'artTheme' ),
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'mealKit_backgroundColourControl', array(
+   	'label'      => __( 'Background Colour', 'mealKitTheme' ),
     'description' => 'Change the background Colour',
    	'section'    => 'colors',
-   	'settings'   => 'art_backgroundColour',
+   	'settings'   => 'mealKit_backgroundColour',
    ) ) );
 
    // Header and Footer garden_backgroundColour // Background Colour
-    $wp_customize->add_setting( 'art_headerFooterColour' , array(
+    $wp_customize->add_setting( 'mealKit_headerFooterColour' , array(
         'default'   => '#000000',
         'transport' => 'refresh',
     ) );
 
 
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'art_headerFooterColourControl', array(
-    	'label'      => __( 'Header and Footer Colour', 'artTheme' ),
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'mealKit_headerFooterColourControl', array(
+    	'label'      => __( 'Header and Footer Colour', 'mealKitTheme' ),
      'description' => 'Change the Header and Footer Colour',
     	'section'    => 'colors',
-    	'settings'   => 'art_headerFooterColour',
+    	'settings'   => 'mealKit_headerFooterColour',
     ) ) );
 
 
    // Footer Message
-   $wp_customize->add_section( 'art_footerSection' , array(
-       'title'      => __( 'Footer Text', 'artTheme' ),
+   $wp_customize->add_section( 'mealKit_footerSection' , array(
+       'title'      => __( 'Footer Text', 'mealKitTheme' ),
        'priority'   => 30,
    ));
 
-   $wp_customize->add_setting( 'art_footerMessage' , array(
-       'default'   => 'copyright@2020',
+   $wp_customize->add_setting( 'mealKit_footerMessage' , array(
+       'default'   => '@2020M-Kit. All rights reserved.',
        'transport' => 'refresh',
    ) );
 
-   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'art_footerMessageControl', array(
-     'label'      => __( 'Footer Text', 'artTheme' ),
-     'section'    => 'art_footerSection',
-     'settings'   => 'art_footerMessage',
+   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'mealKit_footerMessageControl', array(
+     'label'      => __( 'Footer Text', 'mealKitTheme' ),
+     'section'    => 'mealKit_footerSection',
+     'settings'   => 'mealKit_footerMessage',
    ) ) );
 
    // Site Title Text
-   $wp_customize->add_section( 'art_siteTitleTextSection' , array(
-       'title'      => __( 'Site Title Text', 'artTheme' ),
+   $wp_customize->add_section( 'mealKit_siteTitleTextSection' , array(
+       'title'      => __( 'Site Title Text', 'mealKitTheme' ),
        'priority'   => 30,
    ));
 
-   $wp_customize->add_setting( 'art_siteTitleText' , array(
-       'default'   => 'Art Wellington',
+   $wp_customize->add_setting( 'mealKit_siteTitleText' , array(
+       'default'   => 'Meal Kit Delivery',
        'transport' => 'refresh',
    ) );
 
-   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'art_siteTitleTextControl', array(
-     'label'      => __( 'Site Title Text', 'artTheme' ),
-     'section'    => 'art_siteTitleTextSection',
-     'settings'   => 'art_siteTitleText',
+   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'mealKit_siteTitleTextControl', array(
+     'label'      => __( 'Site Title Text', 'mealKitTheme' ),
+     'section'    => 'mealKit_siteTitleTextSection',
+     'settings'   => 'mealKit_siteTitleText',
    ) ) );
 
 
    // header image
-   $wp_customize->add_section( 'art_frontPageImage' , array(
-      'title'      => __( 'Front Page Header Image', 'artTheme' ),
-      'priority'   => 30,
+   $wp_customize->add_setting( 'mealKit_frontPageImageSetting' , array(
+    'default'   => '',
+    'transport' => 'refresh',
   ) );
-
-  $wp_customize->add_setting( 'art_frontPageImageSetting' , array(
-      'default'   => '',
-      'transport' => 'refresh',
-  ) );
-
-  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'art_frontPageImageControl', array(
-    'label'      => __( 'Front Page Header Image', 'artTheme' ),
-    'section'    => 'art_frontPageImage',
-    'settings'   => 'art_frontPageImageSetting',
+ 
+  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'mealKit_frontPageImageControl', array(
+    'label'      => __( 'Front Page Header Image', 'mealKitTheme' ),
+    'section'    => 'mealKit_frontPageImage',
+    'settings'   => 'mealKit_frontPageImageSetting',
   ) ) );
 
 
+
+   // footer icon image
+  $wp_customize->add_section( 'mealKit_footerIconImage' , array(
+    'title'      => __( 'Footer Icon Image', 'mealKitTheme' ),
+    'priority'   => 45,
+  ) );
+
+  $wp_customize->add_setting( 'mealKit_footerIcon' , array(
+    'default'   => get_template_directory_uri() . 'images/facebook.png',
+    'transport' => 'refresh',
+  ) );
+
+  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'mealKit_footerIconImageControl', array(
+  'label'      => __( 'Footer Icon Image', 'mealKitTheme' ),
+  'section'    => 'mealKit_footerIconImage',
+  'settings'   => 'mealKit_footerIcon',
+  ) ) );
 
 
    }
@@ -100,10 +112,10 @@ function mytheme_customize_register( $wp_customize ) {
    ?>
     <style type="text/css">
     body {
-            background-color: <?php echo get_theme_mod('art_backgroundColour','#ffffff'); ?>!important;
+            background-color: <?php echo get_theme_mod('mealKit_backgroundColour','#ffffff'); ?>!important;
          }
    .myTheme{
-             background-color: <?php echo get_theme_mod('art_headerFooterColour', '#000000'); ?>!important ;
+             background-color: <?php echo get_theme_mod('mealKit_headerFooterColour', '#000000'); ?>!important ;
            }
 
 

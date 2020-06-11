@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <section class="page-wrap mt-4">
-    <h1 class="title"> <?php the_title(); ?></h1>
+    <h1 class="title text-center"> <?php the_title(); ?></h1>
    
     <div class="container">
       
