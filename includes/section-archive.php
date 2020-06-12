@@ -1,8 +1,8 @@
 <?php
 if (have_posts()) : ?>
  
-  <!-- <div class="row"> -->
-    <!-- <div class="col-sm-9 col-md-9 col-lg-12 col-xl-9 mb-3"> -->
+  <div class="row">
+    <div class="col-sm-9 col-md-9 col-lg-12 col-xl-9 mb-3">
       <div class="row pl-3">
         <?php while (have_posts()):
           the_post();
@@ -27,16 +27,16 @@ if (have_posts()) : ?>
         <?php endwhile; ?>
 
       </div>
-    <!-- </div>  -->
+    </div> 
     <!-- col ends here -->
     
-    <!-- <div class="col-sm-3 col-md-3 col-lg-12 col-xl-3 widget">
-        <?php// if(is_active_sidebar('blog-sidebar')) :?>
-          <?php //dynamic_sidebar('blog-sidebar'); ?>
-        <?php //endif; ?>
-      </div>  -->
+    <div class="col-sm-3 col-md-3 col-lg-12 col-xl-3 widget">
+        <?php if(is_active_sidebar('blog-sidebar')) :?>
+          <?php dynamic_sidebar('blog-sidebar'); ?>
+        <?php endif; ?>
+      </div> 
       <!-- col ends here -->
-  <!-- </div>   -->
+  </div>  
   <!-- row ends here -->
 
 <?php

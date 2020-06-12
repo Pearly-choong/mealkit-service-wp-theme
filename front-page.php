@@ -4,8 +4,11 @@
         <div class="header-image position-relative" style="background-image:url(<?php echo get_header_image(); ?>);">
         </div>
     </div>
-    <h2 class="site-title"><?php bloginfo( 'name' ); ?></h2>
-    <h2 class="site-title"><?php bloginfo( 'description' ); ?></h2>
+    <div class="text-group">
+        <h1><?php bloginfo( 'name' ); ?></h1>
+        <h1><?php bloginfo( 'description' ); ?></h1>
+        <button type="button" class="btn my-btn-style mt-3">Get Started</button>
+    </div>
 <?php endif; ?>   
     <!-- <h1 class="display-4"> <?php// echo get_theme_mod('mealKit_siteTitleText'); ?></h1> -->
     

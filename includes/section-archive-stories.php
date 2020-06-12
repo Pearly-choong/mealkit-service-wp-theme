@@ -31,11 +31,11 @@ if (have_posts()) : ?>
     <!-- </div>  -->
     <!-- col ends here -->
     
-    <!-- <div class="col-sm-3 col-md-3 col-lg-12 col-xl-3 widget">
-        <?php// if(is_active_sidebar('blog-sidebar')) :?>
-          <?php //dynamic_sidebar('blog-sidebar'); ?>
-        <?php //endif; ?>
-      </div>  -->
+    <div class="col-sm-3 col-md-3 col-lg-12 col-xl-3 widget">
+        <?php if(is_active_sidebar('blog-sidebar')) :?>
+          <?php dynamic_sidebar('blog-sidebar'); ?>
+        <?php endif; ?>
+      </div> 
       <!-- col ends here -->
   <!-- </div>   -->
   <!-- row ends here -->

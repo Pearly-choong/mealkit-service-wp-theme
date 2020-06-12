@@ -4,7 +4,7 @@
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@500;700&display=swap');
 
 
 body {
@@ -12,7 +12,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h1,h2 {
     font-family: 'Acme', sans-serif;
 }
 
@@ -24,6 +24,12 @@ h1 {
     color: #C2004E;
 }
 
+.custom-logo-link{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
 /*Top Menu*/
 
 .menu-top-menu-container, .custom-logo-link{
@@ -33,6 +39,9 @@ h1 {
 
 .navbar-light .navbar-nav .nav-link {
     color: #252A4B;
+    font-family: 'Acme', sans-serif;
+    padding: 15px;
+    font-size: 21px;
   }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -83,11 +92,20 @@ h1 {
     align-items: center;
 }
 
-.site-title{
+.text-group{
     position: absolute;
     z-index: 1;
-    top: 40%;
-    left: 50%;
+    top: 50%;
+    right: 10%;
+}
+
+
+.my-btn-style{
+    color: white;
+    background-color: #70BF44;
+    border-radius: 28px;;
+    padding: 12px 24px;
+    font-size: 18px;
 }
 
 
@@ -107,7 +125,7 @@ h1 {
 .widget_recent_entries ul li a, 
 .widget_categories ul li a{
     color: #252A4B;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .widget_recent_entries ul li a:hover,
@@ -164,10 +182,15 @@ footer{
     width: 90%;
 }
 
-.facebook{
-    width:80px;
-    height:auto;
-  }
+.my-social-icon ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.social-meida-icons li a{
+    font-size: 1rem;
+    color: #70BF44;
+}
 
 
 
@@ -196,3 +219,67 @@ footer{
     font-weight: 400 !important;
     line-height: 1.5 !important;
 }
+
+
+.input-text {
+    border-radius: 5px;
+    border : 1px solid green;
+    padding: 0.3rem 1rem;
+    margin-left: 1rem;
+}
+
+#order_comments {
+    width: 15rem;
+    height: 5rem;
+}
+
+
+#searchsubmit {
+    background-color: #70BF44;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+
+.div.wpforms-container-full .wpforms-form input[type=submit], 
+div.wpforms-container-full .wpforms-form button[type=submit], 
+div.wpforms-container-full .wpforms-form .wpforms-page-button{
+    background-color: #70BF44;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; 
+    font-size: 18px;
+}
+
+
+.woocommerce ul.products li.product a{
+    background-color: #70BF44;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    // padding: 15px 35px; 
+    // font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.woocommerce-loop-product__title{
+    color:#252A4B; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.price, .woocommerce-Price-amount {
+    font-size: 18px;
+}
+
+
+// .woocommerce-LoopProduct-link, .woocommerce-loop-product__link{
+//     background-color: white;
+// }
+
+// .attachment-woocommerce_thumbnail .size-woocommerce_thumbnail{
+//     border: 2px solid white;
+// }

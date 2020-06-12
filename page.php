@@ -11,8 +11,9 @@
             <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="mb-3 img-fluid img-thumbnail">
             </div>
         <?php endif; ?>
-
+        <div class="container">
         <?php get_template_part('includes/section','content'); ?>
+        </div>
     </div>
 </section>
 
