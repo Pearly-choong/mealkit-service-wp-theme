@@ -8,19 +8,29 @@
     <meta name="keywords" content="meal kit, delivery, service, wordpress, custom theme, website template, website design">
     <script src="https://kit.fontawesome.com/8c9236379a.js" crossorigin="anonymous"></script>
      <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> -->
+     <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+     _gaq.push(['_trackPageview']);
+     (function()
+     {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+    </script>
+
     <title><?php bloginfo( 'name' ); ?></title>
     <?php wp_head(); ?> <!-- notice the wordpress admin bar on top-->
 
   </head>
   <body>
-  <!-- <div class="bg-info">
-        <h1 class="display-4 text-light siteTitle"> <?php //echo get_theme_mod('art_siteTitleText'); ?></h1>
-  </div> -->
+
+        <!-- <h1 class="display-4"> <?php //echo get_theme_mod('mealKit_siteTitleText'); ?></h1> -->
+
     <header class="myTheme">
               
-
      <!-- bootstrap nav-walker -->
-
     <nav class="navbar navbar-expand-md navbar-light" role="navigation">
     <div class="row w-100 mt-3 ml-3">
     

@@ -28,7 +28,7 @@
             <p class="footer-text"><?php echo get_theme_mod('mealKit_footerMessage'); ?></p>  
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <p>Theme Designed by<a href="https://skillcrush.com/blog/free-portfolio-templates/" > Pearly Choong </a></p>
+            <p>Theme Designed by<u><a href="https://skillcrush.com/blog/free-portfolio-templates/" > Pearly Choong </a></u></p>
         </div>
     </div>
  </div>

@@ -8,6 +8,7 @@ if (have_posts()) : ?>
         <?php while (have_posts()):
           the_post();
         ?>
+        <h1>Hello</h1>
           <div class="blog-info col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <div class="card my-3 border mr-5 shadow d-flex justify-content-center" style="width: 28rem;">        
                 <?php if(has_post_thumbnail()): ?>

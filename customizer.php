@@ -11,7 +11,6 @@ function mytheme_customize_register( $wp_customize ) {
        'transport' => 'refresh',
    ) );
 
-
    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'mealKit_backgroundColourControl', array(
    	'label'      => __( 'Background Colour', 'mealKitTheme' ),
     'description' => 'Change the background Colour',
@@ -36,24 +35,20 @@ function mytheme_customize_register( $wp_customize ) {
 
 
     // Heading Text Colour
-    $wp_customize->add_setting( 'mealKit_headingTextColour', array(
-      'default'   => '#333333',
-      'transport' => 'refresh',
-    ) );
+    // $wp_customize->add_setting( 'mealKit_headingTextColour', array(
+    //   'default'   => '#333333',
+    //   'transport' => 'refresh',
+    // ) );
 
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'mealKit_headingTextColourControl', array(
-      'label'      => __( 'Heading Text Colour', 'mealKitTheme' ),
-      'description' => 'Change the Heading Text Colour',
-      'section'    => 'colors',
-      'settings'   => 'mealKit_headingTextColour',
-    ) ) );
+    // $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'mealKit_headingTextColourControl', array(
+    //   'label'      => __( 'Heading Text Colour', 'mealKitTheme' ),
+    //   'description' => 'Change the Heading Text Colour',
+    //   'section'    => 'colors',
+    //   'settings'   => 'mealKit_headingTextColour',
+    // ) ) );
+
 
     // Site Title Text
-  //  $wp_customize->add_section( 'mealKit_siteTitleTextSection' , array(
-  //      'title'      => __( 'Site Title Text', 'mealKitTheme' ),
-  //      'priority'   => 30,
-  //  ));
-
     $wp_customize->add_setting( 'mealKit_siteTitleText' , array(
       'default'   => 'Meal Kit Delivery',
       'transport' => 'refresh',
@@ -98,25 +93,19 @@ function mytheme_customize_register( $wp_customize ) {
      'settings'   => 'mealKit_footerMessage',
    ) ) );
 
+
+  // // Social media icon colour controls
+  //   $wp_customize->add_setting('mealKit_socialMediaLinkColor', array(
+  //     'default' => '#d62655',
+  //     'transport' => 'refresh',
+  //   ));
+  //   $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mealKit_socialMediaLinkColorControl', array(
+  //     'label' => __('Social media links colours', 'mealKitTheme'),
+  //     'description' => 'Changes the colour of social media links',
+  //     'section' => 'colors',
+  //     'settings' => 'mealKit_socialMediaLinkColor',
+  //   )));
  
-
-  //  // footer icon image
-  // $wp_customize->add_section( 'mealKit_footerIconImage' , array(
-  //   'title'      => __( 'Footer Icon Image', 'mealKitTheme' ),
-  //   'priority'   => 45,
-  // ) );
-
-  // $wp_customize->add_setting( 'mealKit_footerIcon' , array(
-  //   'default'   => get_template_directory_uri() . 'images/facebook.png',
-  //   'transport' => 'refresh',
-  // ) );
-
-  // $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'mealKit_footerIconImageControl', array(
-  // 'label'      => __( 'Footer Icon Image', 'mealKitTheme' ),
-  // 'section'    => 'mealKit_footerIconImage',
-  // 'settings'   => 'mealKit_footerIcon',
-  // ) ) );
-
 
    }
 

@@ -29,6 +29,12 @@ h1,h2 {
     max-height: 50px;
 }
 
+a{
+    color:#252A4B;
+}
+a:hover{
+    color: #70BF44; 
+}
 
 /*Top Menu*/
 
@@ -114,22 +120,29 @@ h1,h2 {
     margin: 0;
     padding: 0;
     color: #252A4B; 
+    font-family: 'Acme', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
+
 .widget_recent_entries ul li,
-.widget_categories ul li{
+.widget_categories ul li,
+.widget_archive ul li{
     list-style-type: none;
     padding: 5px;
 }
 
 .widget_recent_entries ul li a, 
-.widget_categories ul li a{
+.widget_categories ul li a,
+.widget_archive ul li a{
     color: #252A4B;
     font-family: 'Montserrat', sans-serif;
 }
 
 .widget_recent_entries ul li a:hover,
-.widget_categories ul li a:hover{
+.widget_categories ul li a:hover,
+.widget_archive ul li a:hover{
     color: #70BF44;
     text-decoration: underline;
 }
@@ -182,17 +195,26 @@ footer{
     width: 90%;
 }
 
+
+
 .my-social-icon ul{
     list-style-type: none;
-    display: inline-block;
+    display: flex; 
+    justify-content: center;
 }
 
-.social-meida-icons li a{
-    font-size: 1rem;
+.my-social-icon ul li{
+    margin: 10px;
+}
+
+i{
+    font-size: 2rem;
+    color: #252A4B;
+}
+
+i:hover{
     color: #70BF44;
 }
-
-
 
 .billingFields .form-row{
     width: 100% !important;
@@ -283,3 +305,17 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button{
 // .attachment-woocommerce_thumbnail .size-woocommerce_thumbnail{
 //     border: 2px solid white;
 // }
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
