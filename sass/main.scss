@@ -32,10 +32,11 @@ h1,h2 {
 
 
 a{
-    color:$theme-secondary-color-darkblue;
+    color: $theme-third-color-red;
+    text-decoration: underline;
 }
 a:hover{
-    color: $theme-primary-color-green; 
+    color:$theme-primary-color-green; 
 }
 
 
@@ -49,6 +50,7 @@ a:hover{
     font-family: $header-font;
     padding: 15px;
     font-size: 21px;
+    text-decoration: none;
   }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -63,6 +65,16 @@ a:hover{
   }
 
 
+.dropdown-menu a{
+	text-decoration: none;
+}
+.dropdown-item:hover{
+    background-color: $theme-primary-color-green;
+    color: white;
+}
+
+
+
 
 // style search button
 #searchsubmit {
@@ -71,8 +83,12 @@ a:hover{
     border: none;
     border-radius: 5px;
     padding: 5px 8px;
+    font-family: $header-font;
 }
 
+#searchsubmit:hover {   
+    color: white;
+}
 
 
 // header image
@@ -103,6 +119,14 @@ a:hover{
     font-size: 18px;
 }
 
+.wp-block-button a{
+    font-family: $header-font;
+}
+
+.wp-block-button a:hover{
+    color: black;
+    text-decoration: none;
+}
 
 
 // blog sidebar
@@ -190,9 +214,16 @@ i:hover{
     color: $theme-primary-color-green;
 }
 
+.my-font-size {
+    font-size: 11px;
+}
 
-
-
+.my-bg-color {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
 
 
 

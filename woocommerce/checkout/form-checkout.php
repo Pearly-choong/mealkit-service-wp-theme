@@ -51,7 +51,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 	
-	<h3 class="theme-color mt-5" id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+	<h3 class="theme-color-2 theme-title-font mb-3 mt-5" id="order_review_heading"><?php esc_html_e( '3. Your order & Payment', 'woocommerce' ); ?></h3>
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

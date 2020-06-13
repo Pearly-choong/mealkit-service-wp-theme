@@ -62,6 +62,7 @@ add_action('wp_print-styles', 'wpb_add_google_fonts');
 
 
 //custom image size
+add_image_size('blog-xlarge', 1000, 500, false);
 add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-small', 300, 200, true);
 
@@ -106,6 +107,7 @@ function mealKit_custom_logo_setup() {
 add_action( 'after_setup_theme', 'mealKit_custom_logo_setup' );
 
 
+ 
 
 
 // custom post type

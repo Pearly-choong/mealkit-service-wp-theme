@@ -2,7 +2,7 @@
 
 <section class="page-wrap">
 
-    <h1 class="title text-center"> <?php echo single_cat_title(); ?> </h1>
+    <h1 class="title text-center mt-5"> <?php echo single_cat_title(); ?> </h1>
    
     <?php get_template_part('includes/section','stories'); ?>
     

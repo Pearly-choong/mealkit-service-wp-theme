@@ -31,9 +31,14 @@
             <p>Theme Designed by<u><a href="https://skillcrush.com/blog/free-portfolio-templates/" > Pearly Choong </a></u></p>
         </div>
     </div>
- </div>
+    
+</div>
+
+    <!-- <div class="my-bg-color py-2">
+     <p class="text-center my-font-size text-light pt-1">This website was built for Yoobee College assignment.  All images and icons were downloaded from free resources - unplash & iconfinder. Usage permitted under the “fair dealing” right for educational purpose for all images, icons and information. </p>
+    </div> -->
 </footer>
 
-<?php wp_footer(); ?>
+<?php //wp_footer(); ?>
 </body>
 </html>

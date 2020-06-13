@@ -56,8 +56,8 @@ $col    = 1;
 		$col     = $col * -1;
 		$oldcol  = $oldcol * -1;
 	?>
-
-	<div class="u-column<?php echo $col < 0 ? 1 : 2; ?> col-<?php echo $oldcol < 0 ? 1 : 2; ?> woocommerce-Address">
+	<div class="border px-5 py-5 mb-3">
+	<div class="u-column <?php// echo $col < 0 ? 1 : 2; ?> col-6<?php //echo $oldcol < 0 ? 1 : 2; ?> woocommerce-Address">
 		<header class="woocommerce-Address-title title">
 			<h3><?php echo esc_html( $address_title ); ?></h3>
 			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php echo $address ? esc_html__( 'Edit', 'woocommerce' ) : esc_html__( 'Add', 'woocommerce' ); ?></a>
@@ -68,7 +68,7 @@ $col    = 1;
 			?>
 		</address>
 	</div>
-
+	</div>
 <?php endforeach; ?>
 
 <?php if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) : ?>

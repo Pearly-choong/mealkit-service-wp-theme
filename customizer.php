@@ -34,6 +34,19 @@ function mytheme_customize_register( $wp_customize ) {
     ) ) );
 
 
+    // // Text color
+    // $wp_customize->add_setting( 'mealKit_textColor', array(
+    //   'default'   => '#252A4B',
+    //   'transport' => 'refresh',
+    // ) );
+
+    // $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'mealKit_textColor', array(
+    //   'label'   => __( 'Text color', 'mealKitTheme' ),
+    //   'description' => 'Change the Text Colour',
+    //   'section' => 'colors',
+    //   'settings'   => 'mealKit_textColor',
+    // ) ) );
+
     // Heading Text Colour
     // $wp_customize->add_setting( 'mealKit_headingTextColour', array(
     //   'default'   => '#333333',

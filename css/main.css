@@ -9936,28 +9936,49 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 1.5 !important;
 }
 
-.input-text {
-  border-radius: 5px;
-  border: 1px solid #252A4B;
-  padding: 0.3rem 1rem;
-  margin-left: 1rem;
+.input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
+  border: 1px solid lightgray;
+  padding: 0.3rem 2rem;
+  margin-left: 1.2rem !important;
+  width: 100%;
 }
 
 #order_comments {
-  width: 15rem;
-  height: 5rem;
+  width: 600px;
+  height: 150px;
+}
+
+.woocommerce form .form-row label,
+.woocommerce form .form-row .required {
+  margin-right: 5px;
 }
 
 .div.wpforms-container-full .wpforms-form input[type=submit],
 div.wpforms-container-full .wpforms-form button[type=submit],
 div.wpforms-container-full .wpforms-form .wpforms-page-button,
-.woocommerce .cart .button, .woocommerce .cart input.button {
-  background-color: #70BF44;
+.woocommerce .cart .button, .woocommerce .cart input.button,
+.wc-proceed-to-checkout a, .woocommerce-Button button,
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
+.woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: #70BF44 !important;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
-  font-size: 18px;
+  font-family: "Acme", sans-serif;
+}
+
+.wpforms-form .wpforms-page-button:hover, .wc-proceed-to-checkout a:hover,
+.woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-Button button:hover,
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:hover {
+  background-color: #70BF44 !important;
+  color: black !important;
+}
+
+.woocommerce a.added_to_cart .wc-forward {
+  color: #C2004E;
+  text-decoration: underline;
+  background-color: none;
 }
 
 .woocommerce ul.products li.product a {
@@ -9965,7 +9986,12 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button,
   color: white;
   border: none;
   border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Acme", sans-serif;
+}
+
+.woocommerce ul.products li.product a:hover {
+  background-color: #70BF44;
+  color: black;
 }
 
 .woocommerce-loop-product__title {
@@ -9976,6 +10002,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button,
 
 .price, .woocommerce-Price-amount {
   font-size: 18px;
+  color: #C2004E;
 }
 
 .woocommerce #content table.cart td.actions .input-text,
@@ -9983,7 +10010,42 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button,
 .woocommerce-page #content table.cart td.actions .input-text,
 .woocommerce-page table.cart td.actions,
 .input-text {
-  width: 120px;
+  width: 300px;
+}
+
+.input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
+  padding: 0 !important;
+}
+
+.woocommerce-notices-wrapper .woocommerce-EditAccountForm {
+  border: 2px solid grey;
+  padding: 10px 10px;
+}
+
+.woocommerce nav {
+  margin-top: 10px;
+  background-color: black;
+}
+
+.woocommerce nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px 5px;
+}
+
+.woocommerce nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.woocommerce nav ul li a:hover {
+  color: #70BF44;
+}
+
+.country_to_state, .country_select, .select2-hidden-accessible,
+.state_select, .select2-hidden-accessible {
+  padding: 0.3rem 2rem;
+  width: 100%;
 }
 
 body {
@@ -10008,7 +10070,8 @@ h1, h2 {
 }
 
 a {
-  color: #252A4B;
+  color: #C2004E;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -10024,6 +10087,7 @@ a:hover {
   font-family: "Acme", sans-serif;
   padding: 15px;
   font-size: 21px;
+  text-decoration: none;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -10037,12 +10101,26 @@ a:hover {
   color: #70BF44;
 }
 
+.dropdown-menu a {
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #70BF44;
+  color: white;
+}
+
 #searchsubmit {
   background-color: #70BF44;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 5px 8px;
+  font-family: "Acme", sans-serif;
+}
+
+#searchsubmit:hover {
+  color: white;
 }
 
 .header-image {
@@ -10068,6 +10146,15 @@ a:hover {
   border-radius: 28px;
   padding: 12px 24px;
   font-size: 18px;
+}
+
+.wp-block-button a {
+  font-family: "Acme", sans-serif;
+}
+
+.wp-block-button a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .widget {
@@ -10140,6 +10227,17 @@ i {
 
 i:hover {
   color: #70BF44;
+}
+
+.my-font-size {
+  font-size: 11px;
+}
+
+.my-bg-color {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

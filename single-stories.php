@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<hr>
 <section class="page-wrap">
 <div class="container mt-5">
 
