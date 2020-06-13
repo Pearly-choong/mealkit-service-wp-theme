@@ -47,14 +47,14 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php endif; ?>
 </div>
-<div class="woocommerce-additional-fields">
+<div class="woocommerce-additional-fields border px-5 py-5 mt-5">
 	<?php do_action( 'woocommerce_before_order_notes', $checkout ); ?>
 
 	<?php if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' === get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) : ?>
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h3 class="theme-color mt-5"><?php esc_html_e( 'Additional information', 'woocommerce' ); ?></h3>
+			<h3 class="theme-color-3 theme-title-font mb-5"><?php esc_html_e( '2. Additional information', 'woocommerce' ); ?></h3>
 
 		<?php endif; ?>
 

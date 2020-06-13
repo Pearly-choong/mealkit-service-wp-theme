@@ -93,10 +93,10 @@ add_action('widgets_init', 'my_sidebars');
 // custom logo
 function mealKit_custom_logo_setup() {
     $defaults = array(
-    'height'      => 20,
-    'width'       => 20,
-    'flex-height' => true,
-    'flex-width'  => true,
+    'height'      => 70,
+    'width'       => 90,
+    'flex-height' => false,
+    'flex-width'  => false,
     'header-text' => array( 'site-title', 'site-description' ),
     );
     add_theme_support( 'custom-logo', $defaults );

@@ -3,7 +3,7 @@ if (have_posts()) : ?>
  
   <!-- <div class="row"> -->
     <!-- <div class="col-xs-9 col-sm-9 col-md-9 col-lg-12 col-xl-9 mb-3"> -->
-      <div class="row pl-3">
+      <div class="row pl-3 mb-5">
         <?php while (have_posts()):
           the_post();
         ?>
@@ -30,11 +30,24 @@ if (have_posts()) : ?>
     <!-- </div>  -->
     <!-- col ends here -->
     
+    <div class="container mt-5">
+        <?php
+        global $wp_query;
+        $big = 99999999999;
+        echo paginate_links(array(
+            'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+            'format'=>'?paged-%#%',
+            'current' => max(1, get_query_var('paged')),
+            'total' => $wp_query -> max_num_pages
+        ));
+        ?>
+    </div>
+    <hr class="break-line">
     <!-- <div class="col-xs-3 col-sm-3 col-md-3 col-lg-12 col-xl-3 widget"> -->
      <div class="container mt-5"> 
     <div class="widget mt-5">
         <?php if(is_active_sidebar('blog-sidebar')) :?>
-          <?php dynamic_sidebar('blog-sidebar'); ?>
+          <?php dynamic_sidebar('blog-sidebar'); ?>        
         <?php endif; ?>
     </div> 
         </div>

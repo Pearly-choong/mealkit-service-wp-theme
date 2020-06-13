@@ -4,48 +4,49 @@
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables';
+@import 'woocommerce';
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@500;700&display=swap');
 
 
 body {
-    color:#252A4B; 
-    font-family: 'Montserrat', sans-serif;
+    color:$theme-secondary-color-darkblue; 
+    font-family: $body-font;
 }
 
 h1,h2 {
-    font-family: 'Acme', sans-serif;
+    font-family: $header-font;
 }
 
 .theme-color {
-    color: #70BF44;  
+    color: $theme-primary-color-green;  
 }
 
 .theme-color-2 {  
-    color: #C2004E;
+    color: $theme-third-color-red;
 }
 
-.custom-logo-link{
-    max-width: 50px;
-    max-height: 50px;
+.theme-title-font {
+    font-family: $header-font;
 }
+
 
 a{
-    color:#252A4B;
+    color:$theme-secondary-color-darkblue;
 }
 a:hover{
-    color: #70BF44; 
+    color: $theme-primary-color-green; 
 }
 
-/*Top Menu*/
 
+//  top menu
 .menu-top-menu-container, .custom-logo-link{
     display: inline-block;
 }
 
-
 .navbar-light .navbar-nav .nav-link {
-    color: #252A4B;
-    font-family: 'Acme', sans-serif;
+    color: $theme-secondary-color-darkblue;
+    font-family: $header-font;
     padding: 15px;
     font-size: 21px;
   }
@@ -54,40 +55,27 @@ a:hover{
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #70BF44;
+  color: $theme-primary-color-green;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-    color: #70BF44;
+    color: $theme-primary-color-green;
   }
 
 
 
-
-// .top-bar{
-// 	position: sticky;
-// 	top: 0;
-// 	z-index: 100;
-// }
-// .top-bar a{
-// 	padding-left: 10px;
-// 	padding-right: 10px;
-// }
-// .dropdown-menu{
-// 	border: 0;
-// }
-
-// .dropdown-item:hover{
-// 	color: #70BF44;
-// }
-
-// .current-menu-item a{
-// 	font-weight: 700;
-// }
-
-/*End of top menu*/
+// style search button
+#searchsubmit {
+    background-color: $theme-primary-color-green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
 
 
+
+// header image
 .header-image{
     width: 100vw;
     height: 100vh;
@@ -98,6 +86,7 @@ a:hover{
     align-items: center;
 }
 
+// site title
 .text-group{
     position: absolute;
     z-index: 1;
@@ -105,25 +94,29 @@ a:hover{
     right: 10%;
 }
 
-
+// button on header-image
 .my-btn-style{
     color: white;
-    background-color: #70BF44;
+    background-color: $theme-primary-color-green;
     border-radius: 28px;;
     padding: 12px 24px;
     font-size: 18px;
 }
 
 
+
+// blog sidebar
 .widget {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: #252A4B; 
-    font-family: 'Acme', sans-serif;
+    margin-bottom: 10px;
+    color: $theme-secondary-color-darkblue; 
+    font-family: $header-font;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+
 
 
 .widget_recent_entries ul li,
@@ -136,23 +129,24 @@ a:hover{
 .widget_recent_entries ul li a, 
 .widget_categories ul li a,
 .widget_archive ul li a{
-    color: #252A4B;
-    font-family: 'Montserrat', sans-serif;
+    color: $theme-secondary-color-darkblue;
+    font-family: $body-font;
 }
 
 .widget_recent_entries ul li a:hover,
 .widget_categories ul li a:hover,
 .widget_archive ul li a:hover{
-    color: #70BF44;
+    color: $theme-primary-color-green;
     text-decoration: underline;
 }
 
 
 
+
+// page content
 figcaption {
     width: 300px;
 }
-
 
 .wp-block-image{
     text-align: center;
@@ -160,32 +154,14 @@ figcaption {
 
 
 .card-body a:hover {
-    color: #70BF44;
+    color: $theme-primary-color-green;
 }
 
 
-// .card-body a{
-//     background-color: #70BF44;
-//     color: white;
-//     font-family: 'Montserrat', sans-serif;
-// }
-
-
-// .my-border {
-//     border : 1px solid #70BF44;
-// }
-
-// .card-body a:hover {
-//     color: #70BF44;
-//     background-color: white;
-//     border : 2px solid #70BF44;
-// }
 
 
 
-
-
-
+// footer 
 footer{
     left: 0;
     bottom: 0;
@@ -194,8 +170,6 @@ footer{
 .break-line {
     width: 90%;
 }
-
-
 
 .my-social-icon ul{
     list-style-type: none;
@@ -209,113 +183,17 @@ footer{
 
 i{
     font-size: 2rem;
-    color: #252A4B;
+    color: $theme-secondary-color-darkblue;
 }
 
 i:hover{
-    color: #70BF44;
-}
-
-.billingFields .form-row{
-    width: 100% !important;
-}
-
-.billingFields .form-row .woocommerce-input-wrapper{
-    width: 100% !important;
-}
-
-.billingFields .form-row .woocommerce-input-wrapper input,
-.billingFields .form-row .woocommerce-input-wrapper select{
-    height: calc(1.5em + .75rem + 2px) !important;
-    padding: .375rem .75rem !important;
-    font-size: 1rem !important;
-    font-weight: 400 !important;
-    line-height: 1.5 !important;
-}
-
-.billingFields .form-row .woocommerce-input-wrapper textarea{
-    min-height: 200px !important;
-    max-height: 800px !important;
-    padding: .375rem .75rem !important;
-    font-size: 1rem !important;
-    font-weight: 400 !important;
-    line-height: 1.5 !important;
+    color: $theme-primary-color-green;
 }
 
 
-.input-text {
-    border-radius: 5px;
-    border : 1px solid green;
-    padding: 0.3rem 1rem;
-    margin-left: 1rem;
-}
-
-#order_comments {
-    width: 15rem;
-    height: 5rem;
-}
-
-
-#searchsubmit {
-    background-color: #70BF44;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 8px;
-}
-
-
-.div.wpforms-container-full .wpforms-form input[type=submit], 
-div.wpforms-container-full .wpforms-form button[type=submit], 
-div.wpforms-container-full .wpforms-form .wpforms-page-button{
-    background-color: #70BF44;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px; 
-    font-size: 18px;
-}
-
-
-.woocommerce ul.products li.product a{
-    background-color: #70BF44;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    // padding: 15px 35px; 
-    // font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.woocommerce-loop-product__title{
-    color:#252A4B; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-.price, .woocommerce-Price-amount {
-    font-size: 18px;
-}
-
-
-// .woocommerce-LoopProduct-link, .woocommerce-loop-product__link{
-//     background-color: white;
-// }
-
-// .attachment-woocommerce_thumbnail .size-woocommerce_thumbnail{
-//     border: 2px solid white;
-// }
 
 
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-}
