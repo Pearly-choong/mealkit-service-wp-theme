@@ -5,8 +5,8 @@
         </div>
     </div>
     <div class="text-group">
-        <h1><?php bloginfo( 'name' ); ?></h1>
-        <h1><?php bloginfo( 'description' ); ?></h1>
+        <h1 class="myHeading"><?php bloginfo( 'name' ); ?></h1>
+        <h1 class="myHeading"><?php bloginfo( 'description' ); ?></h1>
         <!-- <button type="button" class="btn my-btn-style mt-3">Get Started</button> -->
         <div class="wp-block-button mt-4"><a class="wp-block-button__link has-background" href="http://localhost:8888/Module4/wordpress-summative4/shop/" style="background-color:#70bf44">Get Started</a></div>
     </div>
@@ -14,7 +14,7 @@
     <!-- <h1 class="display-4"> <?php// echo get_theme_mod('mealKit_siteTitleText'); ?></h1> -->
     
     
-    <section class="container myTheme">
+    <section class="container">
     <div class="my-content my-5">
         <!-- <div class="row"> -->
         <div class="mt-1">

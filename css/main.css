@@ -9971,8 +9971,8 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button,
 .wpforms-form .wpforms-page-button:hover, .wc-proceed-to-checkout a:hover,
 .woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-Button button:hover,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:hover {
-  background-color: #70BF44 !important;
-  color: black !important;
+  background-color: #70BF44;
+  color: black;
 }
 
 .woocommerce a.added_to_cart .wc-forward {
@@ -10083,31 +10083,14 @@ a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #252A4B;
   font-family: "Acme", sans-serif;
   padding: 15px;
   font-size: 21px;
   text-decoration: none;
 }
 
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active {
-  color: #70BF44;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #70BF44;
-}
-
 .dropdown-menu a {
   text-decoration: none;
-}
-
-.dropdown-item:hover {
-  background-color: #70BF44;
-  color: white;
 }
 
 #searchsubmit {
@@ -10238,6 +10221,18 @@ i:hover {
   width: 100%;
   height: auto;
   bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .text-group {
+    margin: auto;
+    top: 70%;
+    right: 5%;
+  }
+
+  .myHeading {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

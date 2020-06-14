@@ -30,7 +30,6 @@ h1,h2 {
     font-family: $header-font;
 }
 
-
 a{
     color: $theme-third-color-red;
     text-decoration: underline;
@@ -46,33 +45,16 @@ a:hover{
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $theme-secondary-color-darkblue;
+    // color: $theme-secondary-color-darkblue;
     font-family: $header-font;
     padding: 15px;
     font-size: 21px;
     text-decoration: none;
   }
 
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active {
-  color: $theme-primary-color-green;
-}
-
-.navbar-light .navbar-nav .nav-link:hover{
-    color: $theme-primary-color-green;
-  }
-
-
 .dropdown-menu a{
 	text-decoration: none;
 }
-.dropdown-item:hover{
-    background-color: $theme-primary-color-green;
-    color: white;
-}
-
 
 
 
@@ -110,6 +92,7 @@ a:hover{
     right: 10%;
 }
 
+
 // button on header-image
 .my-btn-style{
     color: white;
@@ -140,7 +123,6 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-
 
 
 .widget_recent_entries ul li,
@@ -227,4 +209,22 @@ i:hover{
 
 
 
+// phone size
+@media only screen and (max-width: 576px){
+    // site title
+    .text-group{
+        margin: auto;
+        top: 70%;
+        right: 5%;
+    }
 
+    .myHeading{
+        font-size: 1.5rem;
+    }
+
+    // nav navbar-nav{
+    //     z-index: 2 !important;
+    //     position: absolute !important;
+    //     top: 5%;
+    // }
+}

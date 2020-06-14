@@ -34,17 +34,17 @@ add_theme_support('post-thumbnails');
 add_theme_support('widgets');
 add_theme_support( 'custom-logo');
 
-
+function theme_setup(){
 // Menus
-register_nav_menus(
-    array(
-        'top-menu' => 'Top Menu Location',
-        'mobile-menu' => 'Mobile Menu Location',
-        'footer-menu' => 'Footer Menu Location',
-    )
+  register_nav_menus(
+      array(
+          'top-menu' => __('Top Menu Location', 'mealKitTheme'),
+          'mobile-menu' => 'Mobile Menu Location',
+          'footer-menu' => 'Footer Menu Location',
+      )
 
-);
-
+  );
+}
 
 //Bootstrap nav walker
 function register_navwalker(){
@@ -133,7 +133,6 @@ add_action('init','my_first_post_type');
 
 
 // Taxanomy
-
 function my_first_taxonomy(){
   $args = array(
     'labels' => array(
@@ -143,7 +142,6 @@ function my_first_taxonomy(){
 
     'public' => true,
     'hierarchical' => true,//false works like tags, true like catgories without labels
-
 
   );
   register_taxonomy('types', array('stories'),$args);
