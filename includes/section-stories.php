@@ -8,6 +8,7 @@ if (have_posts()) : ?>
         <?php while (have_posts()):
           the_post();
         ?>
+        <a href="<?php the_permalink(); ?>" >
           <div class="container mt-5">      
             <div class="mr-5 shadow row" style="width: 100%;">        
                 <?php if(has_post_thumbnail()): ?>

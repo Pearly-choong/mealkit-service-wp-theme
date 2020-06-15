@@ -175,14 +175,14 @@ function mytheme_customize_register( $wp_customize ) {
 
 
 //Hook2: wp_head to output custom-generated CSS
- function mytheme_customize_css()
- {
+function mytheme_customize_css()
+{
    ?>
     <style type="text/css">
     body {
             background-color: <?php echo get_theme_mod('mealKit_backgroundColour','#ffffff'); ?>!important;
          }
-   .myTheme{
+    .myTheme{
              background-color: <?php echo get_theme_mod('mealKit_headerFooterColour', '#ffffff'); ?>!important ;
            }
     .myHeading{
@@ -208,7 +208,7 @@ function mytheme_customize_register( $wp_customize ) {
       background-color: <?php echo get_theme_mod('mealKit_CTAButtonColor', '#70BF44') ?>!important;
     }
 
-  </style>
-<?php
+    </style>
+  <?php
 }
 add_action( 'wp_head', 'mytheme_customize_css');

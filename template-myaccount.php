@@ -31,15 +31,8 @@ Template Name: MyAccount
 
     </div>
 
-    <div class="">
 
-      <?php //if(is_active_sidebar('page-sidebar')) :?>
-        <?php //dynamic_sidebar('page-sidebar'); ?>
-
-      <?php //endif; ?>
-    </div>
-
-</section>
+  </section>
 
 </div>
 <?php get_footer(); ?>

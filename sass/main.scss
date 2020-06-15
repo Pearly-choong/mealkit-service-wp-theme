@@ -121,7 +121,7 @@ a:hover{
     color: $theme-secondary-color-darkblue; 
     font-family: $header-font;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 
@@ -145,7 +145,6 @@ a:hover{
     color: $theme-primary-color-green;
     text-decoration: underline;
 }
-
 
 
 

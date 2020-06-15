@@ -10148,7 +10148,7 @@ a:hover {
   color: #252A4B;
   font-family: "Acme", sans-serif;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .widget_recent_entries ul li,

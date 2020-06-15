@@ -12,8 +12,7 @@
     </div>
 <?php endif; ?>   
     <!-- <h1 class="display-4"> <?php// echo get_theme_mod('mealKit_siteTitleText'); ?></h1> -->
-    
-    
+       
     <section class="container">
     <div class="my-content my-5">
         <!-- <div class="row"> -->

@@ -19,7 +19,7 @@ if (have_posts()) : ?>
                   <?php
                   the_excerpt();//cut of some portion of text
                   ?>
-                  <u><a href="<?php the_permalink(); ?>" class="theme-color-2 mb-4 px-3 py-2 rounded text-underline"> View Recipes </a></u>
+                  <u><a href="<?php the_permalink(); ?>" class="theme-color-2 mb-4 px-3 py-2 rounded text-underline"> Read More </a></u>
               </div>
             </div>
           </div>
@@ -45,12 +45,12 @@ if (have_posts()) : ?>
     <hr class="break-line">
     <!-- <div class="col-xs-3 col-sm-3 col-md-3 col-lg-12 col-xl-3 widget"> -->
      <div class="container mt-5"> 
-    <div class="widget mt-5">
-        <?php if(is_active_sidebar('blog-sidebar')) :?>
-          <?php dynamic_sidebar('blog-sidebar'); ?>        
-        <?php endif; ?>
-    </div> 
-        </div>
+        <div class="widget mt-5">
+            <?php if(is_active_sidebar('blog-sidebar')) :?>
+              <?php dynamic_sidebar('blog-sidebar'); ?>        
+            <?php endif; ?>
+        </div> 
+      </div>
       <!-- col ends here -->
   <!-- </div>   -->
   <!-- row ends here -->
