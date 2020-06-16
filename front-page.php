@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if(has_header_image()): ?>
     <div class="container-fluid p-0">
-        <div class="header-image position-relative" style="background-image:url(<?php echo get_header_image(); ?>);">
+        <div class="header-image" style="background-image:url(<?php echo get_header_image(); ?>);">
         </div>
     </div>
     <div class="text-group">
