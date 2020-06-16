@@ -19,7 +19,7 @@ if (have_posts()) : ?>
                   <?php
                   the_excerpt();//cut of some portion of text
                   ?>
-                  <u><a href="<?php the_permalink(); ?>" class="theme-color-2 mb-4 px-3 py-2 rounded text-underline"> View Recipe </a></u>
+                  <u><a href="<?php the_permalink(); ?>" class="theme-color-2 mb-4 px-3 py-2 rounded text-underline"> Read More </a></u>
               </div>
             </div>
           </div>

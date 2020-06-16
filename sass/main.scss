@@ -57,7 +57,6 @@ a:hover{
 }
 
 
-
 // style search button
 #searchsubmit {
     background-color: $theme-primary-color-green;
@@ -82,16 +81,15 @@ a:hover{
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: center;   
 }
 
 // site title
 .text-group{
     position: absolute;
     z-index: 1;
-    top: 50%;
-    right: 10%;
+    top: 30%;
+    right: 15%;
 }
 
 
@@ -210,17 +208,76 @@ i:hover{
 
 
 
+
+
+// medium screen size
+@media only screen and (max-width: 1024px){
+    // header image
+    .header-image{
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .wp-block-column {
+        flex-basis: calc(100% - 18px) !important;
+    }
+}
+
+
+
+
+
+// tablet size
+@media only screen and (max-width: 768px){
+    .wp-block-image{
+        text-align: center;
+    }
+
+    // header image
+    .header-image{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    // site title
+    .text-group{
+        right: 4%;
+    }
+
+    .wp-block-column {
+        flex-basis: calc(100% - 18px) !important;
+        text-align: left;
+    }
+
+   
+}
+
+
+
+
+
 // phone size
 @media only screen and (max-width: 576px){
     // site title
     .text-group{
         margin: auto;
-        top: 70%;
-        right: 5%;
+        top: 20%;
+        right: 8%;
     }
 
     .myHeading{
         font-size: 1.5rem;
+    }
+
+    // header image
+    .header-image{
+        margin-top: 10px;
+        width: 100vw;
+        height: 60vh;
+    }
+  
+    .wp-block-image{
+        text-align: center;
     }
 
     // nav navbar-nav{

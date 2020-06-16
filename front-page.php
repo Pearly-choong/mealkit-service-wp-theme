@@ -1,14 +1,16 @@
+
 <?php get_header(); ?>
 <?php if(has_header_image()): ?>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 position-relative">
         <div class="header-image" style="background-image:url(<?php echo get_header_image(); ?>);">
         </div>
-    </div>
-    <div class="text-group">
-        <h1 class="myHeading"><?php bloginfo( 'name' ); ?></h1>
-        <h1 class="myHeading"><?php bloginfo( 'description' ); ?></h1>
-        <!-- <button type="button" class="btn my-btn-style mt-3">Get Started</button> -->
-        <div class="wp-block-button mt-4"><a class="wp-block-button__link has-background" href="http://localhost:8888/Module4/wordpress-summative4/shop/" style="background-color:#70bf44">Get Started</a></div>
+    
+        <div class="text-group">
+            <h1 class="myHeading"><?php bloginfo( 'name' ); ?></h1>
+            <h1 class="myHeading"><?php bloginfo( 'description' ); ?></h1>
+            <!-- <button type="button" class="btn my-btn-style mt-3">Get Started</button> -->
+            <div class="wp-block-button mt-4"><a class="wp-block-button__link has-background" href="http://localhost:8888/Module4/wordpress-summative4/shop/" style="background-color:#70bf44">Get Started</a></div>
+        </div>
     </div>
 <?php endif; ?>   
     <!-- <h1 class="display-4"> <?php// echo get_theme_mod('mealKit_siteTitleText'); ?></h1> -->
@@ -28,5 +30,5 @@
     </div>
     </section>
 
-
+            
 <?php get_footer(); ?>

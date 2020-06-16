@@ -10114,14 +10114,13 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .text-group {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  right: 10%;
+  top: 30%;
+  right: 15%;
 }
 
 .my-btn-style {
@@ -10224,15 +10223,54 @@ i:hover {
   bottom: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header-image {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .wp-block-column {
+    flex-basis: calc(100% - 18px) !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wp-block-image {
+    text-align: center;
+  }
+
+  .header-image {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .text-group {
+    right: 4%;
+  }
+
+  .wp-block-column {
+    flex-basis: calc(100% - 18px) !important;
+    text-align: left;
+  }
+}
 @media only screen and (max-width: 576px) {
   .text-group {
     margin: auto;
-    top: 70%;
-    right: 5%;
+    top: 20%;
+    right: 8%;
   }
 
   .myHeading {
     font-size: 1.5rem;
+  }
+
+  .header-image {
+    margin-top: 10px;
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .wp-block-image {
+    text-align: center;
   }
 }
 
