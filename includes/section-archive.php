@@ -39,7 +39,7 @@ if (have_posts()) : ?>
         ?>
     </div>
     <hr class="break-line">
-   
+  
      <div class="container mt-5"> 
         <div class="widget mt-5">
             <?php if(is_active_sidebar('blog-sidebar')) :?>
@@ -48,6 +48,8 @@ if (have_posts()) : ?>
         </div> 
       </div>
 
+
+<?php
  else:
 endif;
 ?>
