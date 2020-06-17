@@ -1,8 +1,6 @@
 <?php
 if (have_posts()) : ?>
  
-  <!-- <div class="row"> -->
-    <!-- <div class="col-xs-9 col-sm-9 col-md-9 col-lg-12 col-xl-9 mb-3"> -->
       <div class="row pl-3 mb-5">
         <?php while (have_posts()):
           the_post();
@@ -27,9 +25,7 @@ if (have_posts()) : ?>
         <?php endwhile; ?>
 
       </div>
-    <!-- </div>  -->
-    <!-- col ends here -->
-    
+   
     <div class="container mt-5">
         <?php
         global $wp_query;
@@ -43,7 +39,7 @@ if (have_posts()) : ?>
         ?>
     </div>
     <hr class="break-line">
-    <!-- <div class="col-xs-3 col-sm-3 col-md-3 col-lg-12 col-xl-3 widget"> -->
+   
      <div class="container mt-5"> 
         <div class="widget mt-5">
             <?php if(is_active_sidebar('blog-sidebar')) :?>
@@ -51,11 +47,7 @@ if (have_posts()) : ?>
             <?php endif; ?>
         </div> 
       </div>
-      <!-- col ends here -->
-  <!-- </div>   -->
-  <!-- row ends here -->
 
-<?php
  else:
 endif;
 ?>

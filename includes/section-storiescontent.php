@@ -47,7 +47,6 @@
 				</a>
 				<?php endforeach; ?>
 
-
 				<?php// comments_template();?>
 				<!-- /to get multiple parts of a page add this in single.php -->
 

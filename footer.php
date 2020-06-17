@@ -14,15 +14,15 @@
                 <p class="footer-text"><?php echo get_theme_mod('mealKit_footerMessage'); ?></p>  
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <p>Theme Designed by<u><a href="https://skillcrush.com/blog/free-portfolio-templates/" > Pearly Choong </a></u></p>
+                <p>Theme Designed by<u><a href="https://www.pearlychoong.com" target="_blank"> Pearly Choong </a></u></p>
             </div>
         </div>
     
     </div>
 
-    <!-- <div class="my-bg-color py-2">
+    <div class="my-bg-color py-2">
      <p class="text-center my-font-size text-light pt-1">This website was built for Yoobee College assignment.  All images and icons were downloaded from free resources - unplash & iconfinder. Usage permitted under the “fair dealing” right for educational purpose for all images, icons and information. </p>
-    </div> -->
+    </div>
 </footer>
 
 <?php wp_footer(); ?>

@@ -15,17 +15,6 @@
           </div>
 
   
-    
-
-        <!-- Plugin : Advanced Custom Field  -->
-        <!-- <ul>
-            <li> Category: <?php// the_field('category'); ?> </li>
-
-            <li> Types of Menu Plan : <?php //the_field('menuplan'); ?> </li>
-            <li> Season : <?php //the_field('season'); ?> </li>
-
-          </ul> -->
-
     </div>
 
 </section>

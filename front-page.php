@@ -8,27 +8,19 @@
         <div class="text-group">
             <h1 class="myHeading"><?php bloginfo( 'name' ); ?></h1>
             <h1 class="myHeading"><?php bloginfo( 'description' ); ?></h1>
-            <!-- <button type="button" class="btn my-btn-style mt-3">Get Started</button> -->
             <div class="wp-block-button mt-4"><a class="wp-block-button__link has-background" href="http://localhost:8888/Module4/wordpress-summative4/shop/" style="background-color:#70bf44">Get Started</a></div>
         </div>
     </div>
 <?php endif; ?>   
-    <!-- <h1 class="display-4"> <?php// echo get_theme_mod('mealKit_siteTitleText'); ?></h1> -->
+    
        
-    <section class="container">
-    <div class="my-content my-5">
-        <!-- <div class="row"> -->
+<section class="container">
+    <div class="my-content my-5">   
         <div class="mt-1">
             <?php get_template_part('includes/section','content'); ?>
         </div>
-        <!-- <div class="widget pl-5 col-lg-3">
-            <?php //if(is_active_sidebar('page-sidebar')) :?>
-                <?php //dynamic_sidebar('page-sidebar'); ?>
-            <?php //endif; ?>
-        </div>  -->
-        <!-- </div>       -->
     </div>
-    </section>
+</section>
 
             
 <?php get_footer(); ?>
