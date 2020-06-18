@@ -162,6 +162,9 @@ figcaption {
     color: $theme-primary-color-green;
 }
 
+.page-wrap {
+    height: auto;
+}
 
 
 
@@ -211,6 +214,15 @@ i:hover{
     .my-footer p {
         text-align: center;
     }
+    footer{
+        left: 0;
+        bottom: 0;
+    }
+
+    .my-bg-color {
+        height: auto;
+        bottom: 0;
+    }
 }
 
 
@@ -233,8 +245,16 @@ i:hover{
     .my-footer p {
         text-align: center;
     }
-}
+    footer{
+        left: 0;
+        bottom: 0;
+    }
 
+    .my-bg-color {
+        height: auto;
+        bottom: 0;
+    }
+}
 
 
 
@@ -264,10 +284,30 @@ i:hover{
         margin-top: 5px;
     }
 
+    footer{
+        left: 0;
+        bottom: 0;
+    }
+
     .my-footer p {
         text-align: center;
     }
    
+    #order_comments {
+        width: 280px;
+        height: 150px;
+    }
+
+    .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select { 
+        margin-left: 0 !important;
+        width: 100%;
+        border : 1px solid lightgray;
+    }
+
+    .woocommerce-billing-fields__field-wrapper, .woocommerce-additional-fields__field-wrapper{
+        padding-left: 1rem !important;
+        padding-right: 0 !important;
+    }
 }
 
 
@@ -317,5 +357,65 @@ i:hover{
     .my-footer p {
         text-align: center;
     }
+
+    #order_comments {
+        width: 280px;
+        height: 150px;
+    }
+
+    .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select { 
+        margin-left: 0 !important;
+        width: 100%;
+        border : 1px solid lightgray;
+    }
+
+    .woocommerce-billing-fields__field-wrapper, .woocommerce-additional-fields__field-wrapper{
+        padding-left: 1rem !important;
+        padding-right: 0 !important;
+    }
+
+    
    
+}
+
+
+@media only screen and (max-width: 375px){
+	.myHeading {
+		font-size: 1.1rem;
+	}
+	
+    p {
+       font-size: 0.9rem;
+    }
+	
+	.my-font-size, 
+	.my-footer p {
+		font-size: 0.6rem;
+	}
+	 
+	.title {
+		font-size: 1.8rem;
+	}
+	
+	.searchform,
+	.my-custom-logo {
+		text-align: center;
+    }
+    
+    #order_comments {
+        width: 280px;
+        height: 150px;
+    }
+
+    .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select { 
+        margin-left: 0 !important;
+        width: 100%;
+        border : 1px solid lightgray;
+    }
+
+    .woocommerce-billing-fields__field-wrapper, .woocommerce-additional-fields__field-wrapper{
+        padding-left: 1rem !important;
+        padding-right: 0 !important;
+    }
+	
 }

@@ -1,150 +1,309 @@
+@media only screen and (min-width:768px){
+    // woocommerce billing forms
+    .billingFields .form-row{
+        width: 100% !important;
+    }
 
-// woocommerce billing forms
-.billingFields .form-row{
-    width: 100% !important;
-}
+    .billingFields .form-row .woocommerce-input-wrapper{
+        width: 100% !important;
+    }
 
-.billingFields .form-row .woocommerce-input-wrapper{
-    width: 100% !important;
-}
+    .billingFields .form-row .woocommerce-input-wrapper input,
+    .billingFields .form-row .woocommerce-input-wrapper select{
+        height: calc(1.5em + .75rem + 2px) !important;
+        padding: .375rem .75rem !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+    }
 
-.billingFields .form-row .woocommerce-input-wrapper input,
-.billingFields .form-row .woocommerce-input-wrapper select{
-    height: calc(1.5em + .75rem + 2px) !important;
-    padding: .375rem .75rem !important;
-    font-size: 1rem !important;
-    font-weight: 400 !important;
-    line-height: 1.5 !important;
-}
-
-.billingFields .form-row .woocommerce-input-wrapper textarea{
-    min-height: 200px !important;
-    max-height: 800px !important;
-    padding: .375rem .75rem !important;
-    font-size: 1rem !important;
-    font-weight: 400 !important;
-    line-height: 1.5 !important;
-}
-
-
-.input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
-    // border-radius: 5px;
-    border : 1px solid lightgray;
-    padding: 0.3rem 3rem;
-    margin-left: 1.2rem !important;
-    width: 100%;
-}
-
-#order_comments {
-    width: 600px;
-    height: 150px;
-}
+    .billingFields .form-row .woocommerce-input-wrapper textarea{
+        min-height: 200px !important;
+        max-height: 800px !important;
+        padding: .375rem .75rem !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+    }
 
 
-.woocommerce form .form-row label,
-.woocommerce form .form-row .required{
-    margin-right: 5px;
-}
+    .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
+        // border-radius: 5px;
+        border : 1px solid lightgray;
+        padding: 0.3rem 3rem;
+        margin-left: 1.2rem !important;
+        width: 100%;
+    }
 
-// wpform submit button & woocommerce shop order button 
-.div.wpforms-container-full .wpforms-form input[type=submit], 
-div.wpforms-container-full .wpforms-form button[type=submit], 
-div.wpforms-container-full .wpforms-form .wpforms-page-button,
-.woocommerce .cart .button, .woocommerce .cart input.button, 
-.wc-proceed-to-checkout a, .woocommerce-Button button,
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
-.woocommerce button.button.alt, .woocommerce input.button.alt{
-    background-color: $theme-primary-color-green !important;
+    #order_comments {
+        width: 500px;
+        height: 150px;
+    }
+
+
+    .woocommerce form .form-row label,
+    .woocommerce form .form-row .required{
+        margin-right: 5px;
+    }
+
+    // wpform submit button & woocommerce shop order button 
+    .div.wpforms-container-full .wpforms-form input[type=submit], 
+    div.wpforms-container-full .wpforms-form button[type=submit], 
+    div.wpforms-container-full .wpforms-form .wpforms-page-button,
+    .woocommerce .cart .button, .woocommerce .cart input.button, 
+    .wc-proceed-to-checkout a, .woocommerce-Button button,
+    .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
+    .woocommerce button.button.alt, .woocommerce input.button.alt{
+        background-color: $theme-primary-color-green !important;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px; 
+        font-family: $header-font;
+    }
+
+
+    .wpforms-form .wpforms-page-button:hover,.wc-proceed-to-checkout a:hover,
+    .woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-Button button:hover,
+    .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:hover{
+        background-color: $theme-primary-color-green ;
+        color: black;
+    }
+
+    // .added_to_cart .wc-forward
+    .woocommerce a.added_to_cart .wc-forward{
+        color: $theme-third-color-red;
+        text-decoration: underline;
+        background-color: none;
+    }
+
+    .woocommerce ul.products li.product a{
+        background-color: $theme-primary-color-green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-family: $header-font;
+    }
+
+    .woocommerce ul.products li.product a:hover{
+        background-color: $theme-primary-color-green;
+        color: black;
+    }
+
+
+
+    .woocommerce-loop-product__title{
+        color:$theme-secondary-color-darkblue; 
+        font-family: $body-font;
+        font-weight: bold;
+    }
+
+
+    .price, .woocommerce-Price-amount {
+        font-size: 18px;
+        color: $theme-third-color-red;
+    }
+
+    .woocommerce #content table.cart td.actions .input-text, 
+    .woocommerce table.cart td.actions .input-text, 
+    .woocommerce-page #content table.cart td.actions .input-text, 
+    .woocommerce-page table.cart td.actions,
+    .input-text{
+        width: 500px;
+    }
+
+    .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select{
+        padding: 5px 10px !important;
+    }
+
+
+    // woocommerce my account navigation and dashboard 
+    .woocommerce-notices-wrapper .woocommerce-EditAccountForm {
+        border: 2px solid grey;
+        padding: 10px 10px;
+    }
+
+    .woocommerce nav {
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .woocommerce nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 15px 5px;   
+    }
+
+    .woocommerce nav ul li a{
     color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px; 
-    font-family: $header-font;
+    text-decoration: none;
+    }
+
+    .woocommerce nav ul li a:hover{
+        color: $theme-primary-color-green;
+    }
+
+    .country_to_state, .country_select, .select2-hidden-accessible,
+    .state_select, .select2-hidden-accessible {
+        padding: 0.3rem 2rem;
+        width: 100%;
+    }
+
+
+
 }
 
+// for bigger screen 
+@media only screen and (min-width:1800px){
+    // woocommerce billing forms
+    .billingFields .form-row{
+        width: 100% !important;
+    }
 
-.wpforms-form .wpforms-page-button:hover,.wc-proceed-to-checkout a:hover,
-.woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-Button button:hover,
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:hover{
-    background-color: $theme-primary-color-green ;
-    color: black;
-}
+    .billingFields .form-row .woocommerce-input-wrapper{
+        width: 100% !important;
+    }
 
-// .added_to_cart .wc-forward
-.woocommerce a.added_to_cart .wc-forward{
-    color: $theme-third-color-red;
-    text-decoration: underline;
-    background-color: none;
-}
+    .billingFields .form-row .woocommerce-input-wrapper input,
+    .billingFields .form-row .woocommerce-input-wrapper select{
+        height: calc(1.5em + .75rem + 2px) !important;
+        padding: .375rem .75rem !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+    }
 
-.woocommerce ul.products li.product a{
-    background-color: $theme-primary-color-green;
+    .billingFields .form-row .woocommerce-input-wrapper textarea{
+        min-height: 200px !important;
+        max-height: 800px !important;
+        padding: .375rem .75rem !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+    }
+
+
+    .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
+        // border-radius: 5px;
+        border : 1px solid lightgray;
+        padding: 0.3rem 3rem;
+        margin-left: 1.2rem !important;
+        width: 100%;
+    }
+
+    #order_comments {
+        width: 500px;
+        height: 150px;
+    }
+
+
+    .woocommerce form .form-row label,
+    .woocommerce form .form-row .required{
+        margin-right: 5px;
+    }
+
+    // wpform submit button & woocommerce shop order button 
+    .div.wpforms-container-full .wpforms-form input[type=submit], 
+    div.wpforms-container-full .wpforms-form button[type=submit], 
+    div.wpforms-container-full .wpforms-form .wpforms-page-button,
+    .woocommerce .cart .button, .woocommerce .cart input.button, 
+    .wc-proceed-to-checkout a, .woocommerce-Button button,
+    .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
+    .woocommerce button.button.alt, .woocommerce input.button.alt{
+        background-color: $theme-primary-color-green !important;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px; 
+        font-family: $header-font;
+    }
+
+
+    .wpforms-form .wpforms-page-button:hover,.wc-proceed-to-checkout a:hover,
+    .woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-Button button:hover,
+    .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:hover{
+        background-color: $theme-primary-color-green ;
+        color: black;
+    }
+
+    // .added_to_cart .wc-forward
+    .woocommerce a.added_to_cart .wc-forward{
+        color: $theme-third-color-red;
+        text-decoration: underline;
+        background-color: none;
+    }
+
+    .woocommerce ul.products li.product a{
+        background-color: $theme-primary-color-green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-family: $header-font;
+    }
+
+    .woocommerce ul.products li.product a:hover{
+        background-color: $theme-primary-color-green;
+        color: black;
+    }
+
+
+
+    .woocommerce-loop-product__title{
+        color:$theme-secondary-color-darkblue; 
+        font-family: $body-font;
+        font-weight: bold;
+    }
+
+
+    .price, .woocommerce-Price-amount {
+        font-size: 18px;
+        color: $theme-third-color-red;
+    }
+
+    .woocommerce #content table.cart td.actions .input-text, 
+    .woocommerce table.cart td.actions .input-text, 
+    .woocommerce-page #content table.cart td.actions .input-text, 
+    .woocommerce-page table.cart td.actions,
+    .input-text{
+        width: 500px;
+    }
+
+    .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select{
+        padding: 5px 10px !important;
+    }
+
+
+    // woocommerce my account navigation and dashboard 
+    .woocommerce-notices-wrapper .woocommerce-EditAccountForm {
+        border: 2px solid grey;
+        padding: 10px 10px;
+    }
+
+    .woocommerce nav {
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .woocommerce nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 15px 5px;   
+    }
+
+    .woocommerce nav ul li a{
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-family: $header-font;
-}
+    text-decoration: none;
+    }
 
-.woocommerce ul.products li.product a:hover{
-    background-color: $theme-primary-color-green;
-    color: black;
-}
+    .woocommerce nav ul li a:hover{
+        color: $theme-primary-color-green;
+    }
 
-
-
-.woocommerce-loop-product__title{
-    color:$theme-secondary-color-darkblue; 
-    font-family: $body-font;
-    font-weight: bold;
-}
+    .country_to_state, .country_select, .select2-hidden-accessible,
+    .state_select, .select2-hidden-accessible {
+        padding: 0.3rem 2rem;
+        width: 100%;
+    }
 
 
-.price, .woocommerce-Price-amount {
-    font-size: 18px;
-    color: $theme-third-color-red;
-}
-
-.woocommerce #content table.cart td.actions .input-text, 
-.woocommerce table.cart td.actions .input-text, 
-.woocommerce-page #content table.cart td.actions .input-text, 
-.woocommerce-page table.cart td.actions,
-.input-text{
-    width: 500px;
-}
-
-.input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select{
-    padding: 5px 10px !important;
-}
-
-
-// woocommerce my account navigation and dashboard 
-.woocommerce-notices-wrapper .woocommerce-EditAccountForm {
-    border: 2px solid grey;
-    padding: 10px 10px;
-}
-
-.woocommerce nav {
-    margin-top: 10px;
-    background-color: black;
-}
-
-.woocommerce nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 15px 5px;   
-}
-
-.woocommerce nav ul li a{
-   color: white;
-   text-decoration: none;
-}
-
-.woocommerce nav ul li a:hover{
-    color: $theme-primary-color-green;
- }
-
-.country_to_state, .country_select, .select2-hidden-accessible,
-.state_select, .select2-hidden-accessible {
-    padding: 0.3rem 2rem;
-    width: 100%;
 }
