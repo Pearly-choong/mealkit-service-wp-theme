@@ -74,7 +74,7 @@
     .woocommerce a.added_to_cart .wc-forward{
         color: $theme-third-color-red;
         text-decoration: underline;
-        background-color: none;
+        background-color: none !important;
     }
 
     .woocommerce ul.products li.product a{
