@@ -8,7 +8,7 @@
         <div class="text-group">
             <h1 class="myHeading"><?php bloginfo( 'name' ); ?></h1>
             <h1 class="myHeading"><?php bloginfo( 'description' ); ?></h1>
-            <div class="wp-block-button mt-4"><a class="wp-block-button__link has-background" href="http://localhost:8888/Module4/wordpress-summative4/shop/" style="background-color:#70bf44">Get Started</a></div>
+            <div class="wp-block-button mt-4"><a class="wp-block-button__link has-background" href="http://68.183.98.69/shop/" style="background-color:#70bf44">Get Started</a></div>
         </div>
     </div>
 <?php endif; ?>   

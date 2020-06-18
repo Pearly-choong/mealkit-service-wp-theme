@@ -10,10 +10,10 @@
 
 
         <div class="my-footer py-3 px-5 row">
-            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8"> 
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8"> 
                 <p class="footer-text"><?php echo get_theme_mod('mealKit_footerMessage'); ?></p>  
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
                 <p>Theme Designed by<u><a href="https://www.pearlychoong.com" target="_blank"> Pearly Choong </a></u></p>
             </div>
         </div>

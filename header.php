@@ -35,15 +35,17 @@
           <div class="row w-100 mt-3 ml-3">     
               <!-- Custom Logo -->
               <div class="col-xs-4 col-sm-6 col-md-2 col-lg-1 col-xl-1">
+                <div class="my-custom-logo">
                 <?php 
                     if ( function_exists( 'the_custom_logo' ) ) {
                     the_custom_logo();
                     // echo ('site-title'); 
                     }
                 ?>
+                </div>
               </div>
         
-              <div class="my-nav col-xs-4 col-sm-6 col-md-5 col-lg-8 col-xl-8 mt-3">
+              <div class="my-nav col-xs-4 col-sm-6 col-md-5 col-lg-10 col-xl-8 mt-3">
                 <?php
                 wp_nav_menu( array(
                     'theme_location'    => 'top-menu',
@@ -63,7 +65,7 @@
                 </button>
               </div>
               
-              <div class="col-xs-4 col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4 text-right">
+              <div class="col-xs-4 col-sm-6 col-md-4 col-lg-12 col-xl-3 mt-4 text-right">
                 <?php get_search_form(); ?>
               </div>   
 

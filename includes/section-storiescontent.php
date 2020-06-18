@@ -29,7 +29,7 @@
 			<p> <?php echo 'by ' . $fname . ' ' . $lname; ?> </p>
 
 
-			<div class="bg-light py-5 px-5 mr-4">
+			<div class="bg-light py-5 px-4 mr-2">
 				<p class="h6 mt-0">
 				<?php
 					
@@ -60,13 +60,14 @@
         	</div>
 
 		</div>	<!-- end of col -->
-
-    	<div class="widget mt-5 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+		
+		
+    	<div class="widget mt-5 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 my-archive-sidebar">
               <?php if(is_active_sidebar('blog-sidebar')) :?>
                  <?php dynamic_sidebar('blog-sidebar'); ?>        
               <?php endif; ?>
 		</div> <!-- end of col -->
-		
+			 
     </div> <!-- end of row -->
 
 

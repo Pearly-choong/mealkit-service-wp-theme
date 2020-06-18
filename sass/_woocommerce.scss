@@ -30,7 +30,7 @@
 .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
     // border-radius: 5px;
     border : 1px solid lightgray;
-    padding: 0.3rem 2rem;
+    padding: 0.3rem 3rem;
     margin-left: 1.2rem !important;
     width: 100%;
 }
@@ -109,11 +109,11 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button,
 .woocommerce-page #content table.cart td.actions .input-text, 
 .woocommerce-page table.cart td.actions,
 .input-text{
-    width: 300px;
+    width: 500px;
 }
 
 .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select{
-    padding: 0 !important;
+    padding: 5px 10px !important;
 }
 
 

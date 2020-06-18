@@ -9938,7 +9938,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
   border: 1px solid lightgray;
-  padding: 0.3rem 2rem;
+  padding: 0.3rem 3rem;
   margin-left: 1.2rem !important;
   width: 100%;
 }
@@ -10010,11 +10010,11 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button,
 .woocommerce-page #content table.cart td.actions .input-text,
 .woocommerce-page table.cart td.actions,
 .input-text {
-  width: 300px;
+  width: 500px;
 }
 
 .input-text, .woocommerce form .form-row select, .woocommerce-page form .form-row select {
-  padding: 0 !important;
+  padding: 5px 10px !important;
 }
 
 .woocommerce-notices-wrapper .woocommerce-EditAccountForm {
@@ -10223,6 +10223,11 @@ i:hover {
   bottom: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .my-footer p {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .header-image {
     width: 100vw;
@@ -10231,6 +10236,14 @@ i:hover {
 
   .wp-block-column {
     flex-basis: calc(100% - 18px) !important;
+  }
+
+  #searchsubmit {
+    margin-top: 5px;
+  }
+
+  .my-footer p {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -10251,12 +10264,24 @@ i:hover {
     flex-basis: calc(100% - 18px) !important;
     text-align: left;
   }
+
+  #searchsubmit {
+    margin-top: 5px;
+  }
+
+  .my-footer p {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 576px) {
   .text-group {
     margin: auto;
     top: 20%;
     right: 8%;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 
   .myHeading {
@@ -10270,6 +10295,22 @@ i:hover {
   }
 
   .wp-block-image {
+    text-align: center;
+  }
+
+  .searchform, .my-custom-logo {
+    text-align: center;
+  }
+
+  #searchsubmit {
+    margin-top: 5px;
+  }
+
+  .my-archive-sidebar {
+    padding-left: 40px;
+  }
+
+  .my-footer p {
     text-align: center;
   }
 }

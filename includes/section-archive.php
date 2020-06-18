@@ -1,12 +1,12 @@
 <?php
 if (have_posts()) : ?>
  
-      <div class="row pl-3 mb-5">
+      <div class="row pl-3 mb-5 container-fluid">
         <?php while (have_posts()):
           the_post();
         ?>
           <div class="blog-info col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <div class="card my-3 border mr-5 shadow" style="width: 28rem;">        
+            <div class="card my-3 border shadow">        
                 <?php if(has_post_thumbnail()): ?>
                     <div>
                       <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="card-img-top img-thumbnail">
@@ -40,7 +40,7 @@ if (have_posts()) : ?>
     </div>
     <hr class="break-line">
   
-     <div class="container mt-5"> 
+     <div class="container mt-5 my-archive-sidebar"> 
         <div class="widget mt-5">
             <?php if(is_active_sidebar('blog-sidebar')) :?>
               <?php dynamic_sidebar('blog-sidebar'); ?>        

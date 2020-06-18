@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <hr>
-<section class="page-wrap">
+<section class="page-wrap container-fluid">
     <div class="mt-5">
           <div class="container">
               <?php if(has_post_thumbnail()): ?>
